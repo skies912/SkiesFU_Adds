@@ -1,0 +1,9 @@
+{
+  "author" : "IntegerSkeptic912",
+  "description" : "My personal edits to FU",
+  "friendlyName" : "Skies' FU Additions",
+  "name" : "SkiesFUAdditions",
+  "includes" : ["FrackinUniverse"],
+  "tags" : "",
+  "version" : "1.0.0"
+}

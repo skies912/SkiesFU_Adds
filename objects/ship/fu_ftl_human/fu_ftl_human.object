@@ -1,0 +1,43 @@
+{
+  "objectName" : "fu_ftl_human",
+  "rarity" : "essential",
+  "colonyTags" : [ "science" ],
+  "category" : "furniture",
+  "description" : "An ftl drive for Human space ships. Allows traversal between systems and planets.",
+  "shortdescription" : "^cyan;Human FTL Drive^white;",
+  "race" : "human",
+  "printable" : false,
+  "price" : 2000,
+
+  "inventoryIcon" : "fu_ftl_human_icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "fu_ftl_human.png:off",
+      "imagePosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "animation" : "fu_ftl_human.animation",
+  "animationParts" : {
+    "base" : "fu_ftl_human.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "scripts" : [ "/objects/ship/fu_shipstatmodifier.lua", "/objects/ship/fu_ftldriveanimation.lua" ],
+  "scriptDelta" : 60,
+  
+  "stats" : {
+    "shipSpeed" : 2,
+    "shipMass" : 2
+  },
+  "capabilities" : [
+    "systemTravel",
+    "planetTravel"
+  ],
+  "maxAmountGroups" : {
+    "ftlDrive" : 2
+  },
+  "byosOnly" : true
+}

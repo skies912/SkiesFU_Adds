@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "bloodstonewall", "count" : 2 },
+    { "item" : "goldbar", "count" : 1 },
+    { "item" : "titaniumbar", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avianmetaltrim2b",
+    "count" : 50
+  },
+  "groups" : [ "craftingfurniture", "materials", "all"]
+}

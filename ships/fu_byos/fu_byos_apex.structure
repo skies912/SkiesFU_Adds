@@ -1,0 +1,23 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : [],
+      "crewSize" : 0
+    }
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "fu_byos.png",
+      "position" : [8, 14],
+      "fullbright" : true
+    },
+    {
+      "image" : "fu_byoslit.png",
+      "position" : [8, 14]
+    }
+  ],
+
+  "blockKey" : "blockKey_apex.config:blockKey",
+  "blockImage" : "fu_byos_apex.png"
+}

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "goldbar", "count" : 3 },
+    { "item" : "titaniumbar", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "slopedavianhullpanel",
+    "count" : 100
+  },
+  "groups" : [ "craftingfurniture", "materials", "all" ]
+}
