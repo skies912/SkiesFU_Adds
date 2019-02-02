@@ -27,10 +27,10 @@
   "flickerPeriodVariance" : 0.05,
   "flickerIntensityVariance" : 0,
 
-  "inventoryIcon" : "avianWallLamp_icon.png",
+  "inventoryIcon" : "avianWallLamp.png:on.1",
   "orientations" : [
     {
-      "image" : "avianWallLamp.png:default.<frame>",
+      "image" : "avianWallLamp.png:off.1",
       "imagePosition" : [0, 0],
       "direction": "left",
 
@@ -38,10 +38,9 @@
       "anchors" : [ "background" ]
     },
     {
-      "image" : "avianWallLamp.png:default.<frame>",
+      "image" : "avianWallLamp.png:off.1",
       "imagePosition" : [0, 0],
       "direction": "right",
-      "flipped" : true,
 
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]      
@@ -49,10 +48,9 @@
   ],
 
   
-  "animation" : "avianWallLamp.animation",
+  "animation" : "/objects/wired/light/lightToggle2.animation",
   "animationParts" : {
-   "bg" : "avianWallLamp.png",
-    "fg" : "avianWallLamp_lit.png"
+   "light" : "avianWallLamp.png"
   },
   "animationCustom" : {
     "sounds" : {

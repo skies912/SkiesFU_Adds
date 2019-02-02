@@ -91,19 +91,12 @@
   "soundEffect": "/sfx/objects/smallboosterflame.ogg",
   "soundEffectRangeMultiplier": 0.5,
   "scripts": [
-    "/objects/ship/fu_shipstatmodifier.lua",
-    "/objects/ship/boosters/boosterflame.lua"
+    "/objects/ship/fu_shipstatmodifier.lua"
   ],
-  "scriptDelta": 10,
   "stats": {
-    "shipSpeed": 1
+    "shipSpeed": 15
   },
-  "flyingBoosterStates": {
-    "none": "turnOff",
-    "disembarking": "turnOn",
-    "warp": "turnOff",
-    "arriving": "turnOn"
-  },
+  "scriptDelta": 60,
   "touchDamage": {
     "poly": [
       [
@@ -127,6 +120,12 @@
     "knockback": 50,
     "damageType": "Environment",
     "damageSourceKind": "plasma"
+  },
+  "flyingBoosterStates": {
+    "none": "turnOff",
+    "disembarking": "turnOn",
+    "warp": "turnOff",
+    "arriving": "turnOn"
   },
   "byosOnly": true
 }

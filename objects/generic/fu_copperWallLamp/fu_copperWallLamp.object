@@ -18,10 +18,10 @@
   "flickerPeriodVariance" : 0.05,
   "flickerIntensityVariance" : 0,
 
-  "inventoryIcon" : "fu_copperWallLamp_icon.png",
+  "inventoryIcon" : "fu_copperWallLamp.png:on.1",
   "orientations" : [
     {
-      "image" : "fu_copperWallLamp.png:default.<frame>",
+      "image" : "fu_copperWallLamp.png:off.1",
       "imagePosition" : [0, 0],
 
       "spaceScan" : 0.1,
@@ -30,10 +30,9 @@
   ],
 
   
-  "animation" : "fu_copperWallLamp.animation",
+  "animation" : "/objects/wired/light/lightToggle2.animation",
   "animationParts" : {
-   "bg" : "fu_copperWallLamp.png",
-    "fg" : "fu_copperWallLamp_lit.png"
+   "light" : "fu_copperWallLamp.png"
   },
   "animationPosition" : [ 0,0 ],
   "animationCustom" : {

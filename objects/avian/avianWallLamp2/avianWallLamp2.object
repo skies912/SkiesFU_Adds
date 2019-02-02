@@ -21,10 +21,10 @@
   "lightColor" : [100, 0, 0],
   "lightPosition" : [4,4],
 
-  "inventoryIcon" : "avianWallLamp2_icon.png",
+  "inventoryIcon" : "avianWallLamp2.png:on.1",
   "orientations" : [
     {
-      "image" : "avianWallLamp2.png:default.<frame>",
+      "image" : "avianWallLamp2.png:off.1",
       "imagePosition" : [0, 0],
 
       "spaceScan" : 0.1,
@@ -33,10 +33,9 @@
   ],
 
   
-  "animation" : "avianWallLamp2.animation",
+  "animation" : "/objects/wired/light/lightToggle2.animation",
   "animationParts" : {
-   "bg" : "avianWallLamp2.png",
-    "fg" : "avianWallLamp2_lit.png"
+   "light" : "avianWallLamp2.png"
   },
   "animationCustom" : {
     "sounds" : {

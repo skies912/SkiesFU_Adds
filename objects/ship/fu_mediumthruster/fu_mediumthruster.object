@@ -62,13 +62,12 @@
   ],
   "soundEffect": "/sfx/objects/boosterflame.ogg",
   "scripts": [
-    "/objects/ship/fu_shipstatmodifier.lua",
-    "/objects/ship/boosters/boosterflame.lua"
+    "/objects/ship/fu_shipstatmodifier.lua"
   ],
-  "scriptDelta": 60,
   "stats": {
     "shipMass": -3
   },
+  "scriptDelta": 60,
   "touchDamage": {
     "poly": [
       [
