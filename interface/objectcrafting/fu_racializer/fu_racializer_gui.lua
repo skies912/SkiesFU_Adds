@@ -7,85 +7,18 @@ local itemNew = nil
 local itemPGI = nil
 local cost = 0
 
--- Table of allowed objects and their assets.
-local raceTable --[[ = 
-{
-    --Vanilla Races
-    ["Apex"]={
-        ["icon"]="sapemale.png",
-        ["items"]=
-        {
-            ["apexshiplocker"]="/objects/ship/apexshiplocker/apexshiplocker.png:default.default"
-        }
-    },
-    ["Avian"]={
-        ["icon"]="avianmale.png",
-        ["items"]=
-        {
-            ["avianshiplocker"]="/objects/ship/avianshiplocker/avianshiplocker.png:default.default"
-        }
-    },
-    ["Floran"]={
-        ["icon"]="plantmale.png",
-        ["items"]=
-        {
-            ["floranshiplocker"]="/objects/ship/floranshiplocker/floranshiplocker.png:default.default"
-        }
-    },
-    ["Glitch"]={
-        ["icon"]="robotmale.png",
-        ["items"]=
-        {
-            ["glitchshiplocker"]="/objects/ship/glitchshiplocker/glitchshiplocker.png:default.default"
-        }
-    },
-    ["Human"]={
-        ["icon"]="humanmale.png",
-        ["items"]=
-        {
-            ["humanshiplocker"]="/objects/ship/humanshiplocker/humanshiplocker.png:default.default"
-        }
-    },
-    ["Hylotl"]={
-        ["icon"]="aquaticmale.png",
-        ["items"]=
-        {
-            ["hylotlshiplocker"]="/objects/ship/hylotlshiplocker/hylotlshiplocker.png:default.default"
-        }
-    },
-    ["Novakid"]={
-        ["icon"]="novakidmale.png",
-        ["items"]=
-        {
-            ["novakidshiplocker"]="/objects/ship/novakidshiplocker/novakidshiplocker.png:default.default"
-        }
-    },
-    -- FU Races
-    -- As of 10/5/18, Thelusians and Radiens do not have any themed ship items
-    ["Kirhos"]={
-        ["icon"]="kirhosmale.png",
-        ["items"]=
-        {
-            ["kirhosshiplocker"]="/objects/ship/kirhosshiplocker/kirhosshiplocker.png:default.default"
-        }
-    },
-    ["Shadow"]={
-        ["icon"]="shadowmale.png",
-        ["items"]=
-        {
-            ["shadowshiplocker"]="/objects/ship/shadowshiplocker/shadowshiplocker.png:default.default"
-        }
-    }
-    -- Other Races
-    
-} --]]
+-- Table of allowed objects.
+local raceTable
 
 function init()
+  self.baseCost = config.getParameter("cost", 100)
+  self.costModifier = config.getParameter("costModifier", 4)
+  self.itemConversions = config.getParameter("objectConversions", {})
+  self.newItem = {}
+  self.raceTableOverride = root.assetJson("/interface/objectcrafting/fu_racializer/fu_racializer_racetableoverride.config")
   raceTable = buildRaceTable()
   populateList()
   widget.setButtonEnabled("btnConvert",false)
-  self.baseCost = config.getParameter("cost", 100)
-  self.costModifier = config.getParameter("costModifier", 4)
 end
 
 function populateList()
@@ -106,12 +39,6 @@ function populateList()
       widget.setData(item, {title = race})
 	end
   end
-  --[[ for raceKey,raceVal in pairs(raceTable) do
-    local item = string.format("%s.%s", self.raceList, widget.addListItem(self.raceList))
-    widget.setText(string.format("%s.title", item), raceKey)
-    widget.setImage(string.format("%s.icon", item), "/interface/title/"..raceVal.icon)
-    widget.setData(item, {title = raceKey})
-  end ]]--
 end
 
 function update(dt)
@@ -129,7 +56,8 @@ function update(dt)
 
     if itemOld and itemOld.name ~= oldItemOld then	--Prevent checking every update
         --Validate slot#1 contains a racial item (exists in the above table)
-        itemOldCfg = root.itemConfig(itemOld).config
+		local itemOldInfo = root.itemConfig(itemOld)
+        itemOldCfg = itemOldInfo.config
 		itemOldRace = itemOldCfg.objectName:gsub("captainschair", ""):gsub("fuelhatch", ""):gsub("shipdoor", ""):gsub("shiphatch", ""):gsub("shiplocker", ""):gsub("techstation", ""):gsub("teleporter", ""):gsub("deco", "")
 		if itemOldRace == "" then
 			itemOldRace = "apex"
@@ -139,16 +67,19 @@ function update(dt)
         --sb.logInfo(itemOldCfg.race)
         --sb.logInfo(raceStr)
         if raceTable[raceStr] and raceTable[raceStr]["items"][itemOldCfg.objectName] then
-            widget.setImage("imgPreviewIn", raceTable[raceStr]["items"][itemOldCfg.objectName])
+			local oldObjectCfg = util.mergeTable(itemOldCfg, itemOld.parameters)
+            widget.setImage("imgPreviewIn", oldObjectCfg.placementImage or getPlacementImage(oldObjectCfg.imageConfig or oldObjectCfg.defaultImageConfig or oldObjectCfg.orientations, itemOldInfo.directory))
             widget.setText(string.format("%s",  "races1Label"), "Supported Races  |  Input ("..raceStr..")" )
 			oldItemOld = itemOld.name
 			self.newName = nil
+			self.newItem = {}
 			raceList_SelectedChanged()
         else
             widget.setImage("imgPreviewIn", "")
             eject(0)
 			oldItemOld = nil
 			self.newName = nil
+			self.newItem = {}
         end
     elseif not itemOld or itemOld.name ~= oldItemOld then
         widget.setImage("imgPreviewIn", "")
@@ -159,6 +90,7 @@ function update(dt)
         setCost = false
 		oldItemOld = nil
 		self.newName = nil
+		self.newItem = {}
     end
     
     if itemPGI then
@@ -194,8 +126,13 @@ function btnConvert_Clicked()
         world.sendEntityMessage(pane.containerEntityId(), "doWorkAnim")
         
         --Create new item
-        itemNew = {name = self.newName, count =itemOld.count, parameters = {}}
+        itemNew = {name = self.newItem.type, count = itemOld.count, parameters = {}}
         itemNew.parameters = itemOld.parameters
+		itemNew.parameters.shortdescription = self.newItem.name
+		itemNew.parameters.shipPetType = itemNewInfo.config.shipPetType
+		itemNew.parameters.orientations = nil
+		itemNew.parameters = util.mergeTable(itemNew.parameters, getNewParameters(itemNewInfo, self.newItem.positionOverride))
+		
 
         player.consumeCurrency("money",cost)
         --sb.logInfo("Money consumed...")
@@ -238,16 +175,26 @@ function raceList_SelectedChanged()
                 local oldRace = itemOldRace
                 local base = oldName:gsub(oldRace, ""):gsub("deco", "")
                 self.newName = string.lower(self.selectedText)..base
+				self.newItem.type = self.itemConversions[oldName] or self.itemConversions[base]
+				self.newItem.name = root.itemConfig(self.newItem.type).config.shortdescription .. " (" .. self.selectedText .. ")"
+				local newItemData = raceTable[self.selectedText].items[self.newName]
+				if type(newItemData) == "table" then
+					self.newItem.positionOverride = newItemData
+				else
+					self.newItem.positionOverride = nil
+				end
                 --sb.logInfo(base)
                 --sb.logInfo(self.newName)
-				if root.itemConfig(self.newName) then
-					local path = raceTable[self.selectedText]["items"][self.newName]
-					widget.setImage("imgPreviewOut", path)
+				itemNewInfo = root.itemConfig(self.newName) or {}
+				local itemNewCfg = itemNewInfo.config
+				if itemNewCfg then
+					widget.setImage("imgPreviewOut", itemNewCfg.placementImage or getPlacementImage(itemNewCfg.orientations, itemNewInfo.directory))
 				elseif string.lower(self.selectedText) == "apex" then
 					self.newName = base
-					if root.itemConfig(self.newName) then
-						local path = raceTable[self.selectedText]["items"][self.newName]
-						widget.setImage("imgPreviewOut", path)
+					itemNewInfo = root.itemConfig(self.newName) or {}
+					local itemNewCfg = itemNewInfo.config
+					if itemNewCfg then
+						widget.setImage("imgPreviewOut", itemNewCfg.placementImage or getPlacementImage(itemNewCfg.orientations, itemNewInfo.directory))
 					else
 						self.newName = false
 						widget.setImage("imgPreviewOut", "")
@@ -269,7 +216,7 @@ end
 
 function buildRaceTable()
 	local tempRaceTable = {}
-	local raceObjects = {"captainschair", "fuelhatch", "shipdoor", "shiphatch", "shiplocker", "techstation", "teleporter"}
+	local raceObjects = config.getParameter("raceObjects")
 	local races = root.assetJson("/interface/windowconfig/charcreation.config").speciesOrdering
 	for _, race in pairs (races) do
 		local raceName = race:gsub(race:sub(0,1),race:sub(0,1):upper(),1)
@@ -279,15 +226,7 @@ function buildRaceTable()
 		for _, objectType in pairs (raceObjects) do
 			local objectInfo = root.itemConfig(race .. objectType)
 			if objectInfo then
-				local objectOrientations = objectInfo.config.orientations[1]
-				local objectImage
-				if objectOrientations.imageLayers then
-					objectImage = objectOrientations.imageLayers[1].image
-				else
-					objectImage = objectOrientations.dualImage or objectOrientations.image
-				end
-				local objectDirectory = objectInfo.directory .. objectImage
-				tempRaceTable[raceName].items[race .. objectType] = objectDirectory:gsub("<frame>", 0):gsub("<color>", "default"):gsub("<key>", 1)
+				tempRaceTable[raceName].items[race .. objectType] = true
 			end
 		end
 		local hasObjects = false
@@ -300,6 +239,73 @@ function buildRaceTable()
 			--sb.logInfo("Removing " .. tostring(raceName))
 		end
 	end
-	util.mergeTable(tempRaceTable, root.assetJson("/interface/objectcrafting/fu_racializer/fu_racializer_racetableoverride.config"))
+	for race, info in pairs (self.raceTableOverride) do
+		if race == "Fu_byos" then
+			tempRaceTable[race] = {items = {}}
+		end
+		if tempRaceTable[race] then
+			tempRaceTable[race].icon = info.icon or tempRaceTable[race].icon
+			if info.items then
+				for item, itemInfo in pairs (info.items) do
+					if root.itemConfig(item) then
+						tempRaceTable[race].items[item] = itemInfo
+					end
+				end
+			end
+		end
+	end
 	return tempRaceTable
+end
+
+function getPlacementImage(objectOrientations, objectDirectory, positionOverride)
+	local objectOrientation = objectOrientations[1]
+	local objectImage
+	if objectOrientation.imageLayers then
+		objectImage = objectOrientation.imageLayers[1].image
+	else
+		objectImage = objectOrientation.dualImage or objectOrientation.image
+	end
+	local newPlacementImage = objectDirectory .. objectImage
+	
+	local newPlacementImagePosition = objectOrientation.imagePosition
+	if positionOverride then
+		newPlacementImagePosition = positionOverride
+	end
+	return newPlacementImage:gsub("<frame>", 0):gsub("<color>", "default"):gsub("<key>", 1), newPlacementImagePosition
+end
+
+function getNewParameters(newItemInfo, positionOverride)
+	local newParameters = {}
+	if newItemInfo then
+		newParameters.inventoryIcon = newItemInfo.directory .. newItemInfo.config.inventoryIcon
+		newParameters.placementImage, newParameters.placementImagePosition = getPlacementImage(newItemInfo.config.orientations, newItemInfo.directory, positionOverride)
+		newParameters.imageConfig = getNewOrientations(newItemInfo, positionOverride)
+		newParameters.imageFlipped = newItemInfo.config.sitFlipDirection
+	end
+	return newParameters
+end
+
+function getNewOrientations(newItemInfo, positionOverride)
+	local newOrientations = newItemInfo.config.orientations
+	for num, _ in pairs (newOrientations) do
+		local imageLayers = newOrientations[num].imageLayers
+		if imageLayers then
+			for num2, _ in pairs (imageLayers) do
+				local imageLayer = imageLayers[num2].image
+				newOrientations[num].imageLayers[num2].image = newItemInfo.directory .. imageLayer
+			end
+		end
+		local dualImage = newOrientations[num].dualImage
+		if dualImage then
+			newOrientations[num].dualImage = newItemInfo.directory .. dualImage
+		end
+		local image = newOrientations[num].image
+		if image and not imageLayers then --Avali teleporter fix
+			newOrientations[num].image = newItemInfo.directory .. image
+		end
+	end
+	if positionOverride then
+		newOrientations[1].imagePosition = positionOverride
+	end
+	return newOrientations
 end
