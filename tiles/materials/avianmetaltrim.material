@@ -6,16 +6,16 @@
   "description" : "Avian Metal Trim",
   "shortdescription" : "Metal trim using Avian technology.",
   "footstepSound" : "/sfx/blocks/footstep_metallic.ogg",
-  "health" : 42,
+  "health" : 30,
   "category": "materials",
 
-  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderTemplate" : "/tiles/girdertemplate.config",
   "renderParameters" : {
     "texture" : "avianmetaltrim.png",
     "variants" : 1,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : true,
-    "zLevel" : 0
+    "multiColored" : false,
+    "zLevel" : 999
   }
 }

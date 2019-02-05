@@ -2,7 +2,7 @@
   "itemName" : "avianmetaltrim",
   "price" : 0,
   "category" : "block",
-  "rarity" : "Common",
+  "rarity" : "Uncommon",
   "inventoryIcon" : "avianmetaltrim_drp.png",
   "shortdescription" : "Avian Metal Trim",
   "description" : "Metal trim using Avian technology.",

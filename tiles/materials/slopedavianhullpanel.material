@@ -11,7 +11,7 @@
   "novakidDescription" : "Some thick metal plating, looks mighty solid.",
   "shortdescription" : "Avian Hull Panel",
   "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
-  "health" : 70,
+  "health" : 50,
   "category" : "materials",
 
   "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
