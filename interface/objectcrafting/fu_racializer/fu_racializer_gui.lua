@@ -131,6 +131,7 @@ function btnConvert_Clicked()
 		itemNew.parameters.shortdescription = self.newItem.name
 		itemNew.parameters.shipPetType = itemNewInfo.config.shipPetType
 		itemNew.parameters.orientations = nil
+		itemNew.parameters.racialisedTo = self.newName
 		itemNew.parameters = util.mergeTable(itemNew.parameters, getNewParameters(itemNewInfo, self.newItem.positionOverride))
 		
 
