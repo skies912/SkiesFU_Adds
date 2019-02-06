@@ -69,7 +69,7 @@ function update(dt)
         if raceTable[raceStr] and raceTable[raceStr]["items"][itemOldCfg.objectName] then
 			local oldObjectCfg = util.mergeTable(itemOldCfg, itemOld.parameters)
             widget.setImage("imgPreviewIn", oldObjectCfg.placementImage or getPlacementImage(oldObjectCfg.imageConfig or oldObjectCfg.defaultImageConfig or oldObjectCfg.orientations, itemOldInfo.directory))
-            widget.setText(string.format("%s",  "races1Label"), "Supported Races  |  Input ("..raceStr..")" )
+            widget.setText(string.format("%s",  "races1Label"), "Supported Races  |  Input: "..raceStr)
 			oldItemOld = itemOld.name
 			self.newName = nil
 			self.newItem = {}
@@ -86,7 +86,7 @@ function update(dt)
         widget.setImage("imgPreviewOut", "")
         widget.setText("lblCost", "Cost:   x--")
         widget.setText("preview_lbl2", "Output: --")
-		widget.setText("races1Label", "Supported Races  |  Input + Preview")
+		widget.setText("races1Label", "Supported Races  |  Input: --")
         setCost = false
 		oldItemOld = nil
 		self.newName = nil
