@@ -1,0 +1,22 @@
+{
+  "metadata" : {
+    "name" : "BYOS_Apex",
+    "species" : "generic",
+    "rules" : [],
+    "protected" : false,
+    "anchor" : [ "BYOS_Apex"],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "extendSurfaceFreeSpace" : 20
+  },
+
+  "parts" : [
+    {
+      "name" : "BYOS_Apex",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "BYOS_Apex.json" ]
+    }
+  ]
+}

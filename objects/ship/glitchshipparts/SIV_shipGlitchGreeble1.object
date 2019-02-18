@@ -1,0 +1,32 @@
+{
+  "objectName" : "SIV_shipGlitchGreeble1",
+  "rarity" : "Uncommon",
+  "description" : "A small decorative object to add detail to Glitch ships.",
+  "shortdescription" : "Ship Greeble (Glitch)",
+  "race" : "glitch",
+  "category" : "decorative",
+  "price" : 35,
+  "printable" : false,
+
+  "inventoryIcon" : "SIV_shipGlitchGreeble1.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image": "SIV_shipGlitchGreeble1.png:<color>.<frame>", "fullbright": true }, { "image": "SIV_shipGlitchGreeble1.png:<color>.<frame>" } ],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+    },
+    {
+      "imageLayers" : [ { "image": "SIV_shipGlitchGreeble1.png:<color>.<frame>", "fullbright": true }, { "image": "SIV_shipGlitchGreeble1.png:<color>.<frame>" } ],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left",
+      "flipImages" : true
+    },
+    {
+      "imageLayers" : [ { "image": "SIV_shipGlitchGreeble1.png:<color>.<frame>?flipy", "fullbright": true }, { "image": "SIV_shipGlitchGreeble1.png:<color>.<frame>?flipy" } ],
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "flipped" : true
+    }]
+}

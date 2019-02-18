@@ -1,0 +1,17 @@
+{ "columns":8,
+ "grid":
+    {
+     "height":8,
+     "orientation":"orthogonal",
+     "width":8
+    },
+ "margin":0,
+ "name":"fu_lights",
+ "spacing":0,
+ "tilecount":0,
+ "tiledversion":"1.2.2",
+ "tileheight":0,
+ "tilewidth":0,
+ "type":"tileset",
+ "version":1.1
+}
