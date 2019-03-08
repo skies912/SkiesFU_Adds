@@ -8,7 +8,7 @@
          "height":35,
          "id":6,
          "name":"back",
-         "opacity":0.56,
+         "opacity":1,
          "type":"tilelayer",
          "visible":true,
          "width":75,
@@ -279,7 +279,7 @@
                  "y":88
                 }, 
                 {
-                 "gid":2452,
+                 "gid":2461,
                  "height":24,
                  "id":44,
                  "name":"",
@@ -291,19 +291,7 @@
                  "y":208
                 }, 
                 {
-                 "gid":2454,
-                 "height":24,
-                 "id":46,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":272,
-                 "y":144
-                }, 
-                {
-                 "gid":2450,
+                 "gid":2459,
                  "height":80,
                  "id":63,
                  "name":"",
@@ -313,54 +301,6 @@
                  "width":64,
                  "x":88,
                  "y":160
-                }, 
-                {
-                 "gid":2451,
-                 "height":24,
-                 "id":72,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":504,
-                 "y":120
-                }, 
-                {
-                 "gid":2458,
-                 "height":40,
-                 "id":73,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":48,
-                 "x":152,
-                 "y":160
-                }, 
-                {
-                 "gid":2458,
-                 "height":40,
-                 "id":74,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":48,
-                 "x":424,
-                 "y":160
-                }, 
-                {
-                 "gid":2455,
-                 "height":24,
-                 "id":75,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":200,
-                 "y":144
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -369,7 +309,7 @@
          "y":0
         }],
  "nextlayerid":8,
- "nextobjectid":76,
+ "nextobjectid":108,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.2.2",
@@ -404,8 +344,12 @@
          "source":"..\/tilesets\/frackinuniverse-custom\/fu_materials.json"
         }, 
         {
-         "firstgid":2448,
+         "firstgid":2457,
          "source":"..\/tilesets\/frackinuniverse-custom\/BYOS\/BYOS.json"
+        }, 
+        {
+         "firstgid":2468,
+         "source":"..\/tilesets\/frackinuniverse-custom\/BYOS\/BYOS_Objects.json"
         }],
  "tilewidth":8,
  "type":"map",

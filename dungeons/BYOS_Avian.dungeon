@@ -5,9 +5,8 @@
     "rules" : [],
     "protected" : false,
     "anchor" : [ "BYOS_Avian"],
-    "maxRadius" : 1000000,
-    "maxParts" : 1,
-    "extendSurfaceFreeSpace" : 20
+    "maxRadius" : 256,
+    "maxParts" : 1
   },
 
   "parts" : [

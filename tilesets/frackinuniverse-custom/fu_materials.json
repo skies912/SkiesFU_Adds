@@ -2,7 +2,7 @@
  "margin":0,
  "name":"fu_materials",
  "spacing":0,
- "tilecount":384,
+ "tilecount":388,
  "tiledversion":"1.2.2",
  "tileheight":8,
  "tileproperties":
@@ -1274,6 +1274,22 @@
      "383":
         {
          "material":"slopedavianhullpanel"
+        },
+     "384":
+        {
+         "material":"metallicbrick"
+        },
+     "385":
+        {
+         "material":"metallicbrick2"
+        },
+     "386":
+        {
+         "material":"metallicbrick3"
+        },
+     "387":
+        {
+         "material":"metallicslab"
         },
      "39":
         {
@@ -2811,6 +2827,22 @@
          "material":"string"
         },
      "383":
+        {
+         "material":"string"
+        },
+     "384":
+        {
+         "material":"string"
+        },
+     "385":
+        {
+         "material":"string"
+        },
+     "386":
+        {
+         "material":"string"
+        },
+     "387":
         {
          "material":"string"
         },
@@ -4984,6 +5016,30 @@
      "383":
         {
          "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/materials\/slopedavianhullpanel.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "384":
+        {
+         "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/materials\/metallicbrick.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "385":
+        {
+         "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/materials\/metallicbrick2.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "386":
+        {
+         "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/materials\/metallicbrick3.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "387":
+        {
+         "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/materials\/metallicslab.png",
          "imageheight":8,
          "imagewidth":8
         },
