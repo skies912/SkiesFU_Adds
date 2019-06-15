@@ -1,0 +1,21 @@
+{
+  "metadata" : {
+    "name" : "test",
+    "species" : "generic",
+    "rules" : [],
+    "protected" : false,
+    "anchor" : [ "test"],
+    "maxRadius" : 256,
+    "maxParts" : 1
+  },
+
+  "parts" : [
+    {
+      "name" : "test",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "test.json" ]
+    }
+  ]
+}

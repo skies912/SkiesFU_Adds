@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="150" height="75" tilewidth="8" tileheight="8" infinite="0" nextlayerid="7" nextobjectid="22">
+ <tileset firstgid="1" source="../../../packed/tilesets/packed/liquids.json"/>
+ <tileset firstgid="29" source="../../../packed/tilesets/packed/materials.json"/>
+ <tileset firstgid="224" source="../../../packed/tilesets/packed/miscellaneous.json"/>
+ <tileset firstgid="246" source="../../../packed/tilesets/packed/supports.json"/>
+ <tileset firstgid="282" source="../../../packed/tilesets/packed/objects-by-race/novakid.json"/>
+ <tileset firstgid="345" source="../../tilesets/frackinuniverse-custom/fu_liquids.json"/>
+ <tileset firstgid="389" source="../../tilesets/frackinuniverse-custom/fu_materials.json"/>
+ <tileset firstgid="778" source="../../tilesets/frackinuniverse-custom/fu_materials_lab.json"/>
+ <layer id="5" name="back" width="150" height="75">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20LL6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4GevyAAB
+  </data>
+ </layer>
+ <layer id="6" name="front" width="150" height="75">
+  <data encoding="base64" compression="zlib">
+   eJzt2sEJgEAMAMHD/puwMWuxAX1dFkRmIB0sgUDWAgAAAAAAAAAAAL7u2hh4ohEq56Er5umKgq4o6IqCrpjmHqRiX1HQFQVdUdAVBV0xzT1IxT8DpbdeNAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/cQMBNTUz
+  </data>
+ </layer>
+ <objectgroup id="2" name="objects"/>
+ <objectgroup id="3" name="anchors"/>
+ <objectgroup id="4" name="wiring"/>
+</map>

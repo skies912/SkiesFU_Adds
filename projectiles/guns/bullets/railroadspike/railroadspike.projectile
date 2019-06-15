@@ -1,0 +1,19 @@
+{
+  "projectileName" : "railroadspike",
+  "image" : "railroadspike.png",
+  "level" : 6,
+  "damageKindImage" : "icon.png",
+  "power" : 5,
+  "speed" : 10,
+  "timeToLive" : 10.0,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/railspikehit/railspikehit.config"
+    }
+  ],
+  "physics" : "bullet",
+  "emitters" : [ "sparks" ]
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="70" height="66" tilewidth="8" tileheight="8" infinite="0" nextlayerid="11" nextobjectid="88">
+ <tileset firstgid="1" source="../../../packed/tilesets/packed/liquids.json"/>
+ <tileset firstgid="29" source="../../../packed/tilesets/packed/materials.json"/>
+ <tileset firstgid="224" source="../../../packed/tilesets/packed/miscellaneous.json"/>
+ <tileset firstgid="246" source="../../../packed/tilesets/packed/supports.json"/>
+ <tileset firstgid="282" source="../../tilesets/frackinuniverse-custom/fu_liquids.json"/>
+ <tileset firstgid="326" source="../../tilesets/frackinuniverse-custom/fu_materials.json"/>
+ <tileset firstgid="715" source="../../tilesets/frackinuniverse-custom/fu_materials_lab.json"/>
+ <tileset firstgid="735" source="../../../packed/tilesets/packed/objects-by-race/human.json"/>
+ <tileset firstgid="1016" source="../../tilesets/frackinuniverse-custom/BYOS_Objects.json"/>
+ <tileset firstgid="1036" source="../../tilesets/frackinuniverse-custom/BYOS_ShipParts.json"/>
+ <tileset firstgid="1119" source="../../tilesets/frackinuniverse-custom/fu_lights.json"/>
+ <tileset firstgid="1126" source="../../tilesets/frackinuniverse-custom/fu_objectsgeneric.json"/>
+ <tileset firstgid="1156" source="../../tilesets/frackinuniverse-custom/fu_platforms.json"/>
+ <tileset firstgid="1181" source="../../../packed/tilesets/packed/objects-by-category/decorative.json"/>
+ <tileset firstgid="2597" source="../../../packed/tilesets/packed/objects-by-category/furniture.json"/>
+ <tileset firstgid="2943" source="../../../packed/tilesets/packed/objects-by-category/light.json"/>
+ <tileset firstgid="3385" source="../../../packed/tilesets/packed/objects-by-category/wire.json"/>
+ <tileset firstgid="3602" source="../../tilesets/frackinuniverse-custom/BYOS_Objects.tsx"/>
+ <layer id="9" name="back" width="70" height="66">
+  <data encoding="base64" compression="zlib">
+   eJztmU1OwzAQRk0vxYbLFK7SbcWKK3EIpFyDNVSphTN4nLE9E0+a70nfoo6VJi+O/xICAAAAAAAAAAAANLmeluHKjgS9fy5HROpmREY7eQtz6O+RGe3m9e7hfM/ieSX5DLLE+6o9lqsr8TIx6YV6iW4CyfSbr5VMSVuj9UvHuPNI2gx3rl43nBfarrf28hFkbaZ0rh43j+ylx422l0uYk/PCHZN44cYr0XU9qJcR4/4evNBxMoa7Vo1xX3s80vKS3ss58IlepkK99HytXnrnL/Hea49x8xdJarxI3FjOd18ysZwf5/4v9//SNiN9HmnoO3bL99OyTs98t2ZeXBOpF66vfj79hbpJPdCU+mnp/IXWy/V1rWUt/W/qpNRm0v+h77GVF83U9r/RCZd4raWxwdJLPH5dKXsPc3JlaXkrnrzQOlxZev/RAS2L2dpL7/yF1vPgReM9svDi4T3q7XetvGzZ71qM0xZeRozT2vM6jXVAzXrBcl6HdcB/vO97S9uz5rox58XjvreHfQaP+7ue9qU8edFKDXvYxwyMnyC9rjolu/LCcfTvJC1eLL6redr3bvGi/R22d/6ive+9hsV3e8v5bm9a171aaK9XR42rFk5oWen3Ucg9Iy/PDQAAAAAAAAAAAP74AQqoU3E=
+  </data>
+ </layer>
+ <layer id="10" name="front" width="70" height="66">
+  <data encoding="base64" compression="zlib">
+   eJztmk2OwjAMRlNmwZE4CmtmzoNYcSKuwGHYIDERRJjULXGwcQLfkz7x39JHGrsRIQAAAAAAAAAAAADYsl1csybhHltw+rHZrhbJTYvxdvIXrskfe8bbze/Nw+E/m5D9XjSFpOOSvsa9twUvG5KRE0cvXm4mvVSi5WUffMeMlZflMM43e9ECXniol6k+y7Lu9+Alr5Mp6XmLuq9dj7Sgx0K/W57kpXR7pWj3L1rk59BcJF5K3Fj2u3P1yCLc/rj9l46Z0t+Dhhs/u1s0+hdJPZdQ6mVqrl4t7sndpPMqOjgOj7e9eKmpK6snY4bOOb15SduWeqHjJOY83O9rHFMLXiK7Fz6bO5IeU5znKJLrgE/00gNSLxrnUQ/UjJen827DaPUwFnXai3w+46jpebX6Og9KnESkfR2uA8a0vu4tuW6cGzfSXreHdW/JOsOUG2mf28O6d1PrUpVo9LsRrGPyYN2bB154mvVSWY+0qJkrNWl93dsDy3731XiOlRDq6t274u3E439kAAAAAAAAAAAAAJ/EBfcGWhA=
+  </data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="22" gid="964" x="288" y="304" width="64" height="80"/>
+  <object id="24" gid="757" x="184" y="344" width="32" height="32"/>
+  <object id="25" gid="757" x="184" y="176" width="32" height="32"/>
+  <object id="26" gid="756" x="288" y="176" width="32" height="32"/>
+  <object id="27" gid="756" x="288" y="344" width="32" height="32"/>
+  <object id="28" gid="832" x="200" y="384" width="48" height="40"/>
+  <object id="29" gid="832" x="256" y="384" width="48" height="40"/>
+  <object id="30" gid="832" x="256" y="304" width="48" height="40"/>
+  <object id="31" gid="832" x="200" y="304" width="48" height="40"/>
+  <object id="32" gid="832" x="200" y="216" width="48" height="40"/>
+  <object id="33" gid="832" x="256" y="216" width="48" height="40"/>
+  <object id="34" gid="832" x="336" y="304" width="48" height="40"/>
+  <object id="35" gid="863" x="384" y="296" width="32" height="24"/>
+  <object id="36" gid="859" x="240" y="296" width="24" height="24"/>
+  <object id="37" gid="872" x="184" y="376" width="16" height="24"/>
+  <object id="39" gid="2636" x="312" y="384" width="32" height="16"/>
+  <object id="40" gid="2611" x="296" y="384" width="16" height="20"/>
+  <object id="41" gid="2611" x="344" y="384" width="16" height="20">
+   <properties>
+    <property name="tilesetDirection" value="left"/>
+   </properties>
+  </object>
+  <object id="42" gid="2652" x="312" y="216" width="48" height="24"/>
+  <object id="44" gid="3368" x="248" y="152" width="8" height="8"/>
+  <object id="45" gid="3368" x="248" y="232" width="8" height="8"/>
+  <object id="46" gid="3368" x="248" y="320" width="8" height="8"/>
+  <object id="47" gid="3368" x="416" y="240" width="8" height="8"/>
+  <object id="48" gid="3368" x="496" y="240" width="8" height="8"/>
+  <object id="49" gid="790" x="488" y="280" width="32" height="24"/>
+  <object id="50" gid="864" x="152" y="352" width="24" height="24"/>
+  <object id="51" gid="864" x="152" y="184" width="24" height="24"/>
+  <object id="52" gid="1889" x="456" y="216" width="64" height="16"/>
+  <object id="53" gid="1412" x="320" y="344" width="16" height="16"/>
+  <object id="54" gid="1412" x="312" y="176" width="16" height="16"/>
+  <object id="55" gid="1627" x="504" y="256" width="32" height="16">
+   <properties>
+    <property name="tilesetDirection" value="left"/>
+   </properties>
+  </object>
+  <object id="56" gid="2214" x="248" y="168" width="24" height="12"/>
+  <object id="57" gid="2250" x="296" y="216" width="16" height="39"/>
+  <object id="58" gid="788" x="136" y="384" width="30" height="32"/>
+  <object id="59" gid="788" x="136" y="216" width="30" height="32"/>
+  <object id="60" gid="1030" x="104" y="368" width="32" height="40"/>
+  <object id="61" gid="1030" x="104" y="200" width="32" height="40"/>
+  <object id="62" gid="3430" x="520" y="280" width="24" height="24">
+   <properties>
+    <property name="tilesetDirection" value="left"/>
+   </properties>
+  </object>
+  <object id="63" gid="1085" x="128" y="128" width="120" height="112"/>
+  <object id="64" gid="1085" x="128" y="512" width="120" height="112"/>
+  <object id="65" gid="1084" x="440" y="184" width="80" height="32"/>
+  <object id="66" gid="1084" x="440" y="376" width="80" height="32"/>
+  <object id="67" gid="2557" x="248" y="408" width="32" height="8"/>
+  <object id="68" gid="2561" x="248" y="128" width="32" height="8"/>
+  <object id="69" gid="1035" x="400" y="368" width="24" height="24"/>
+  <object id="70" gid="1035" x="400" y="184" width="24" height="24"/>
+  <object id="71" gid="1035" x="64" y="432" width="24" height="24"/>
+  <object id="72" gid="1035" x="96" y="432" width="24" height="24"/>
+  <object id="73" gid="1035" x="64" y="120" width="24" height="24"/>
+  <object id="74" gid="1035" x="96" y="120" width="24" height="24"/>
+  <object id="83" gid="1032" x="16" y="216" width="40" height="69"/>
+  <object id="84" gid="1032" x="16" y="384" width="40" height="69"/>
+  <object id="87" gid="3623" x="152" y="288" width="60" height="41"/>
+ </objectgroup>
+ <objectgroup id="3" name="anchors"/>
+ <objectgroup id="4" name="wiring"/>
+</map>

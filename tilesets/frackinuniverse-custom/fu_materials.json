@@ -2,8 +2,8 @@
  "margin":0,
  "name":"fu_materials",
  "spacing":0,
- "tilecount":388,
- "tiledversion":"1.2.2",
+ "tilecount":389,
+ "tiledversion":"1.2.4",
  "tileheight":8,
  "tileproperties":
     {
@@ -1290,6 +1290,10 @@
      "387":
         {
          "material":"metallicslab"
+        },
+     "388":
+        {
+         "material":"fu_blueslopedhullpanel"
         },
      "39":
         {
@@ -2843,6 +2847,10 @@
          "material":"string"
         },
      "387":
+        {
+         "material":"string"
+        },
+     "388":
         {
          "material":"string"
         },
@@ -5040,6 +5048,12 @@
      "387":
         {
          "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/materials\/metallicslab.png",
+         "imageheight":8,
+         "imagewidth":8
+        },
+     "388":
+        {
+         "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/materials\/fu_blueslopedhullpanel.png",
          "imageheight":8,
          "imagewidth":8
         },
