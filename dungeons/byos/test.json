@@ -17,7 +17,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztzqENADAIRUFcl+ou7L9FLUGgqLtLniDfEAEAwKZTynbX7rD9avqnbwAA7HqD8wKc",
+         "data":"eJztkbEJACAMwNx8yt0z\/P8LV+kgHVLokEAHaUCDY+TYSa\/SJbCDcwns4FwCOziXwA7OJbCDcwm6d8xnTji\/sz67qvm9J+6ydP+PivvsqMcOziWwg3MJ7OBcAjs4l6B7xwXQzxaU",
          "encoding":"base64",
          "height":25,
          "id":3,
@@ -35,16 +35,40 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":288,
-                 "height":41,
-                 "id":3,
+                 "gid":292,
+                 "height":40,
+                 "id":12,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":88,
-                 "x":24,
-                 "y":96
+                 "width":32,
+                 "x":48,
+                 "y":40
+                }, 
+                {
+                 "gid":292,
+                 "height":40,
+                 "id":19,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":136,
+                 "y":56
+                }, 
+                {
+                 "gid":292,
+                 "height":40,
+                 "id":20,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":224,
+                 "y":72
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -53,7 +77,7 @@
          "y":0
         }],
  "nextlayerid":5,
- "nextobjectid":5,
+ "nextobjectid":21,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.2.4",
@@ -61,15 +85,15 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/..\/packed\/tilesets\/packed\/materials.json"
+         "source":"..\/..\/..\/packed\/tilesets\/packed\/materials.json"
         }, 
         {
          "firstgid":196,
-         "source":"..\/tilesets\/frackinuniverse-custom\/BYOS_ShipParts.json"
+         "source":"..\/..\/tilesets\/frackinuniverse-custom\/BYOS_ShipParts.json"
         }, 
         {
          "firstgid":279,
-         "source":"..\/tilesets\/frackinuniverse-custom\/BYOS_Objects.json"
+         "source":"..\/..\/tilesets\/frackinuniverse-custom\/BYOS_Objects.json"
         }],
  "tilewidth":8,
  "type":"map",

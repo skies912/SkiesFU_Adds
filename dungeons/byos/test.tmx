@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="50" height="25" tilewidth="8" tileheight="8" infinite="0" nextlayerid="5" nextobjectid="5">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="50" height="25" tilewidth="8" tileheight="8" infinite="0" nextlayerid="5" nextobjectid="21">
  <tileset firstgid="1" source="../../../packed/tilesets/packed/materials.json"/>
  <tileset firstgid="196" source="../../tilesets/frackinuniverse-custom/BYOS_ShipParts.json"/>
  <tileset firstgid="279" source="../../tilesets/frackinuniverse-custom/BYOS_Objects.json"/>
@@ -10,10 +10,12 @@
  </layer>
  <layer id="3" name="front" width="50" height="25">
   <data encoding="base64" compression="zlib">
-   eJztzqENADAIRUFcl+ou7L9FLUGgqLtLniDfEAEAwKZTynbX7rD9avqnbwAA7HqD8wKc
+   eJztkbEJACAMwNx8yt0z/P8LV+kgHVLokEAHaUCDY+TYSa/SJbCDcwns4FwCOziXwA7OJbCDcwm6d8xnTji/sz67qvm9J+6ydP+PivvsqMcOziWwg3MJ7OBcAjs4l6B7xwXQzxaU
   </data>
  </layer>
  <objectgroup id="4" name="objects">
-  <object id="3" gid="288" x="24" y="96" width="88" height="41"/>
+  <object id="12" gid="292" x="48" y="40" width="32" height="40"/>
+  <object id="19" gid="292" x="136" y="56" width="32" height="40"/>
+  <object id="20" gid="292" x="224" y="72" width="32" height="40"/>
  </objectgroup>
 </map>

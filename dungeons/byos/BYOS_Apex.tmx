@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="80" height="35" tilewidth="8" tileheight="8" infinite="0" nextlayerid="5" nextobjectid="78">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="80" height="35" tilewidth="8" tileheight="8" infinite="0" nextlayerid="5" nextobjectid="103">
  <tileset firstgid="1" source="../../../packed/tilesets/packed/liquids.json"/>
  <tileset firstgid="29" source="../../../packed/tilesets/packed/materials.json"/>
  <tileset firstgid="224" source="../../../packed/tilesets/packed/miscellaneous.json"/>
@@ -12,9 +12,9 @@
  <tileset firstgid="1113" source="../../tilesets/frackinuniverse-custom/fu_objectsgeneric.json"/>
  <tileset firstgid="1143" source="../../../packed/tilesets/packed/objects-by-category/furniture.json"/>
  <tileset firstgid="1489" source="../../../packed/tilesets/packed/objects-by-category/decorative.json"/>
- <tileset firstgid="2905" source="../../tilesets/frackinuniverse-custom/BYOS_Objects.json"/>
- <tileset firstgid="2925" source="../../tilesets/frackinuniverse-custom/BYOS_ShipParts.json"/>
- <tileset firstgid="3008" source="../../tilesets/frackinuniverse-custom/BYOS_Objects.tsx"/>
+ <tileset firstgid="2905" source="../../tilesets/frackinuniverse-custom/BYOS_ShipParts.json"/>
+ <tileset firstgid="2988" source="../../tilesets/frackinuniverse-custom/BYOS_Objects.json"/>
+ <tileset firstgid="3007" source="../../../packed/tilesets/packed/objects-by-category/wire.json"/>
  <layer id="3" name="back" width="80" height="35">
   <data encoding="base64" compression="zlib">
    eJztl0EOgyAQRT2JJ+nWk/QG3br1cN7By7QkkhACdmb4IyDzkp+2BMz0iWScJsMwDEObQzlPxv2/VTlPdejdzefn5yJ+nv/NWdOTQ85zFTvJ+YjnURyuiXmtOEScSTknsY/cvCuHKaehw5rnZ+xghGg5dNdeiIlroq5DR1IH2mHob//lTcge1Oy+zwVZCtZK6kA7HM0f2uGI/pAOR/WHcij1t53J1Z3qOTj+KOspdVDvgdSh+WvT313Pr/nr198xyfrnJai7Vu+MrAOx/7xDVF6J1Hpn+xdkHxi7lN5PznjJnkEERcqh5FxZmeNXZ1PqvMztmRrOUpT625jjVH8a7/8atOivF3eelvz15s7Rir8e3Tm8P2lPxhnX6s1qgu4Ha/ZmtUD1Vy30ZoZhGIZxN1+16wAC
@@ -26,7 +26,6 @@
   </data>
  </layer>
  <objectgroup id="2" name="objects">
-  <object id="7" gid="324" x="576" y="160" width="56" height="23"/>
   <object id="8" gid="398" x="200" y="144" width="24" height="24"/>
   <object id="9" gid="455" x="272" y="144" width="32" height="24"/>
   <object id="10" gid="519" x="520" y="120" width="40" height="16">
@@ -74,15 +73,28 @@
     <property name="tilesetDirection" value="left"/>
    </properties>
   </object>
-  <object id="66" gid="2921" x="16" y="152" width="40" height="69"/>
-  <object id="67" gid="2924" x="128" y="56" width="24" height="24"/>
-  <object id="68" gid="2924" x="160" y="56" width="24" height="24"/>
-  <object id="69" gid="2924" x="480" y="208" width="24" height="24"/>
-  <object id="70" gid="2924" x="512" y="208" width="24" height="24"/>
-  <object id="72" gid="2905" x="80" y="64" width="32" height="24"/>
-  <object id="74" gid="2929" x="440" y="64" width="56" height="16"/>
-  <object id="75" gid="2940" x="232" y="32" width="164" height="14"/>
-  <object id="76" gid="2933" x="144" y="256" width="104" height="16"/>
-  <object id="77" gid="3029" x="128" y="224" width="60" height="41"/>
+  <object id="74" gid="2909" x="440" y="64" width="56" height="16"/>
+  <object id="75" gid="2920" x="232" y="32" width="164" height="14"/>
+  <object id="76" gid="2913" x="144" y="256" width="104" height="16"/>
+  <object id="94" gid="2998" x="480" y="208" width="24" height="24"/>
+  <object id="95" gid="2998" x="512" y="208" width="24" height="24"/>
+  <object id="96" gid="2998" x="128" y="56" width="24" height="24">
+   <properties>
+    <property name="imagePositionY" value="0"/>
+   </properties>
+  </object>
+  <object id="97" gid="2998" x="160" y="56" width="24" height="24">
+   <properties>
+    <property name="imagePositionY" value="0"/>
+   </properties>
+  </object>
+  <object id="98" gid="2994" x="80" y="64" width="32" height="24"/>
+  <object id="99" gid="3004" x="128" y="224" width="60" height="41"/>
+  <object id="100" gid="3000" x="16" y="152" width="40" height="69">
+   <properties>
+    <property name="imagePositionY" value="-38"/>
+   </properties>
+  </object>
+  <object id="101" gid="3029" x="576" y="152" width="56" height="23"/>
  </objectgroup>
 </map>

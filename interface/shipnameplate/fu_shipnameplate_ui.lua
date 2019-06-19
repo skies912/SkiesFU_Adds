@@ -1,18 +1,15 @@
 require "/scripts/util.lua"
 require "/scripts/interp.lua"
 
+shipTypes = {"Battleship","Cargo","Cruiser","Explorer","Fighter","Recon","Transport","Shuttle"}
 local currTypeIndex = 1;
 local typeLen;
 
-function init()
-   shipTypes = {"Cruiser","Battleship","Fighter","Transport","Cargo","Recon","Explorer"}
+function init()  
    typeLen = getTableLength(shipTypes)
-   
-   shipName = config.getParameter("shipName", "was nil")
-   shipType = config.getParameter("shipType", "was nil")
 
-   widget.setText("tboxName",shipName)
-   widget.setText("lblType",shipType)
+   widget.setText("tboxName","My Ship")
+   widget.setText("lblType","Cruiser")
 end
 
 function update(dt)
@@ -21,12 +18,16 @@ end
 
 -- widget functions
 function btnAccept_Click()
-
-   object.setConfigParameter("shipName", widget.getText("tboxName"))
-   object.setConfigParameter("shipType", widget.getText("lblType"))
-
-   hasBeenSet = true
+   local name = widget.getText("tboxName")
+   local stype = widget.getText("lblType.value")
    
+   if stype ~= nil then
+      sb.logInfo(stype)
+   else 
+      sb.logInfo("stype == nil!")
+   end
+   
+   world.sendEntityMessage(pane.sourceEntity(), "setVars", {name,stype})
    pane.dismiss()
 end
 

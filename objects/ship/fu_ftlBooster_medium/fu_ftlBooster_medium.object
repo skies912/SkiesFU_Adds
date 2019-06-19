@@ -21,9 +21,9 @@
 	"inventoryIcon": "/objects/ship/fu_thrustericon.png",
 	"orientations": [{
 			"image": "fu_ftlBooster_medium.png:on.1",
-			"imagePosition": [-24, -20],
+			"imagePosition": [-24, -24],
          "animationParts": {"booster": "fu_ftlBooster_medium.png"},
-         "animationPosition": [-24, -20],
+         "animationPosition": [-24, -24],
 			"fullbright": true,
 			"spaceScan": 0.1,
 			"anchors": ["right"],

@@ -8,9 +8,9 @@
  "margin":0,
  "name":"fu_objectsgeneric",
  "spacing":0,
- "tilecount":30,
+ "tilecount":33,
  "tiledversion":"1.2.4",
- "tileheight":216,
+ "tileheight":80,
  "tileproperties":
     {
      "0":
@@ -159,6 +159,24 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"labhatchhuge"
+        },
+     "30":
+        {
+         "imagePositionX":"-40",
+         "imagePositionY":"0",
+         "object":"fu_Bartable"
+        },
+     "31":
+        {
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"fu_Barkeep_spot"
+        },
+     "32":
+        {
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"fu_bartabletop"
         },
      "4":
         {
@@ -341,6 +359,24 @@
          "object":"string"
         },
      "3":
+        {
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string"
+        },
+     "30":
+        {
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string"
+        },
+     "31":
+        {
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string"
+        },
+     "32":
         {
          "imagePositionX":"string",
          "imagePositionY":"string",
@@ -529,6 +565,24 @@
          "imageheight":24,
          "imagewidth":80
         },
+     "30":
+        {
+         "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/objects\/fu_Bartable_Aurora.png",
+         "imageheight":16,
+         "imagewidth":80
+        },
+     "31":
+        {
+         "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/objects\/fu_Barkeep_spot_Aurora.png",
+         "imageheight":40,
+         "imagewidth":24
+        },
+     "32":
+        {
+         "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/objects\/outpostbartop.png",
+         "imageheight":40,
+         "imagewidth":56
+        },
      "4":
         {
          "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/objects\/labgear\/labhatchplatformhuge.png",
@@ -550,7 +604,7 @@
      "7":
         {
          "image":"..\/..\/..\/..\/tiled\/frackinuniverse-custom\/objects\/pixelgoods\/fufloranchair.png",
-         "imageheight":216,
+         "imageheight":24,
          "imagewidth":24
         },
      "8":

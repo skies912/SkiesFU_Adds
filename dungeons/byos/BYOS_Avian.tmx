@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="100" height="50" tilewidth="8" tileheight="8" infinite="0" nextlayerid="9" nextobjectid="69">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="100" height="50" tilewidth="8" tileheight="8" infinite="0" nextlayerid="9" nextobjectid="75">
  <tileset firstgid="1" source="../../../packed/tilesets/packed/liquids.json"/>
  <tileset firstgid="29" source="../../../packed/tilesets/packed/materials.json"/>
  <tileset firstgid="224" source="../../../packed/tilesets/packed/miscellaneous.json"/>
@@ -11,9 +11,8 @@
  <tileset firstgid="1027" source="../../tilesets/frackinuniverse-custom/fu_materials_lab.json"/>
  <tileset firstgid="1047" source="../../tilesets/frackinuniverse-custom/fu_objectsgeneric.json"/>
  <tileset firstgid="1077" source="../../../packed/tilesets/packed/objects-by-category/decorative.json"/>
- <tileset firstgid="2493" source="../../tilesets/frackinuniverse-custom/BYOS_Objects.json"/>
- <tileset firstgid="2513" source="../../tilesets/frackinuniverse-custom/BYOS_ShipParts.json"/>
- <tileset firstgid="2596" source="../../tilesets/frackinuniverse-custom/BYOS_Objects.tsx"/>
+ <tileset firstgid="2493" source="../../tilesets/frackinuniverse-custom/BYOS_ShipParts.json"/>
+ <tileset firstgid="2576" source="../../tilesets/frackinuniverse-custom/BYOS_Objects.json"/>
  <layer id="7" name="back" width="100" height="50">
   <data encoding="base64" compression="zlib">
    eJztm22qwyAQRYXurqvIjt7/7qHd33uPQglEkNSPGY2Za7wH5kdKGhyP8aNa5wghhBBCCCGEkG9eWxAMVhfvG50gQSd40AkeOSccZ2xIOeH7cw6xdk8ndmjrHtnJVfrUkZ2EDmLlGtGRL3OYy0v5uduuf4J4dw6XKF/uGp3eddY7Um1mRCdrGe9OH2F9/AqCTsocUQ//gpA6a4navg6NR2Xd+ZyeTh+ld0/iuNY3upPHLi9Nm6/1cXRoy4zsJOZDM35Yu/A+JPdc2ceyhbWLI3wgObmCD2k5RnAyk4/QScqPNbP5CCM11ltSO79a3Ng+SvMuK2Lrjx5rwp6xuPrvxhxYOdH0T6W5b+szcs/+K4T0nn3byb0P1k5ao5eLMyJXNxbsy3fV35nQ57ohZ4wFYf77PZLUnskZOSM76TUHQsx3BdlJLx9oecZA7Md6+LDOSQOSixW/fzajC1S8kyPGbtJGuL8sWWPl1l6kjdTev+V6YVakZ95i565Qz2qMDM/vYkMXONAFDnSBA/8XhQXrnMzKB1dGHIQ=
@@ -51,14 +50,21 @@
   <object id="48" gid="282" x="536" y="232" width="8" height="8"/>
   <object id="49" gid="374" x="496" y="248" width="32" height="24"/>
   <object id="51" gid="426" x="432" y="248" width="40" height="40"/>
-  <object id="59" gid="2509" x="24" y="248" width="40" height="69"/>
-  <object id="60" gid="2512" x="224" y="144" width="24" height="24"/>
-  <object id="61" gid="2512" x="416" y="152" width="24" height="24"/>
-  <object id="62" gid="2512" x="296" y="304" width="24" height="24"/>
-  <object id="63" gid="2512" x="328" y="304" width="24" height="24"/>
-  <object id="66" gid="2494" x="272" y="160" width="16" height="16"/>
-  <object id="67" gid="2533" x="296" y="160" width="104" height="32"/>
-  <object id="68" gid="2617" x="112" y="328" width="60" height="41"/>
+  <object id="67" gid="2513" x="296" y="160" width="104" height="32"/>
+  <object id="69" gid="2588" x="16" y="248" width="40" height="69"/>
+  <object id="70" gid="2586" x="296" y="304" width="24" height="24"/>
+  <object id="71" gid="2586" x="328" y="304" width="24" height="24"/>
+  <object id="72" gid="2586" x="224" y="144" width="24" height="24">
+   <properties>
+    <property name="imagePositionY" value="0"/>
+   </properties>
+  </object>
+  <object id="73" gid="2586" x="416" y="152" width="24" height="24">
+   <properties>
+    <property name="imagePositionY" value="0"/>
+   </properties>
+  </object>
+  <object id="74" gid="2592" x="112" y="328" width="60" height="41"/>
  </objectgroup>
  <objectgroup id="3" name="anchors"/>
  <objectgroup id="4" name="wiring"/>
