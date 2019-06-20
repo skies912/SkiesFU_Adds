@@ -97,6 +97,7 @@
 					"approach": [10, 6],
 					"timeToLive": 0.3,
 					"layer": "middle",
+               "fullbright": true,
 					"variance": {
 						"initialVelocity": [2.0, 4.0],
 						"color": [253, 218, 19, 255],

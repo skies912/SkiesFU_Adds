@@ -3,7 +3,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJztnUFugzAQRVF7rqqse6Vus+umZ8m6y56l56gQseJYmAAeZmzPe9JXE6Rm4cdge4LCMAAAAAAAAAAAAAAAAADIcn21D+iQjvvXUJ7pc36Gx+SOvQ1zcK7HR+J8cvF5MNP\/7jkv8K1P6nvKUd97gm8bYt\/T2KfX3SPBd72kvvcmzAFH5vn4NehQ4nttzb20Vlt7DTpQ375g\/vYF63NfsP\/2A\/01f1j3znFtAy77h\/r1w+Thd9AJzu0JvnPrrthXyfrt72UO2BJ85\/pmse8jfbc0OLcF377Y4vsy4LsXtH3j3I6wT8J3\/4S9kYVv9mUyhHp9j7L0Ps2z\/VjwLdVXx3c5R3teYe39vRB6L+ch1bPcO+4SNbuhpsfQb4njlaOuSv1JzslP5mt839gyh57lDt\/6bNkTneVO03cSl\/N3Ou\/26DtX21OknLdw\/sT73958p\/WccT1KXNNrdb1lXd2D79TvwrX84Tw4c0xrjsR6TWONd8R3q\/VtfT6ckdZ9x160kPB5uX1O2ntcOk59t0fOdzJ2i8dbm7\/xPVODb+n+Ob7z1OCb+tbFg+9c8N2+7+A89Up9z\/Toe63eU+eyo1k\/kvuxGn0v1XuI6EA2gmS\/pWbffB96R7L\/Zt1vwff5lPZcuZ+pPUqvCwb3K44Kw9I1waHk\/chn1Dqu9bm+3v+uzeNnfJeGbxvi+tb0zdxtxxbflwHfvaDtG9e24NsX+PaF1n6MHksdlPTl6LG0iUT\/fkugPnDtA60a55ywJx13oT45v4ddMfzevS94noUveF6NL3gelS943pwvhOp7pL7bgPnbF6zPfcH+2w\/01\/xh3TvHNQAAAAAAAAAAAAAAQJ5\/K\/cISg==",
+         "data":"eJztnUFOwzAQRSM4FyJrrsS2OzacpWuW3IEbcA4UtVbdIY5SZzJjZ96TvigFKuGXie0hNMMAAAAAAAAAAAAAAAAAoMv52T9ggxz3j2F7ptf5Gu5Teu5luATndrwJ55OL98pMP\/vIcYFve6TvKbW+Hwm+fch9T2Mvz7s1wXe7SN+PJs0BNfN8\/hhs2OJ7ac09t1Zbegw2UN+xYP6OBevzWLD\/jgP9tXh4985x7QMujw\/1G4fJw\/dgE5z7k3yX1l3T107D8vesye\/TJeBL8l3qm+W+a\/puMjj3Bd+xwHcsrH3j3I+0T9rb9881+PYj7Y08fLMv0yHV62uWuc9lLPZjeV8d39up7XmlXsjnTOi97IdWz\/LRcdeo2RU1PaZ+S56o1Lra6k9zzb0UfN9YM4fu5Q7f9qzZE+3lztK3SMj5W867R\/Rdqu0pWs57OH7y\/e\/RfMt6LrgeNc7prbpes64+gm\/pd+Zcfncc7DmmLUdjvWaxxqvx3Wt9ex8Pe6R337kXKzR8nq6vI3uPc89T3\/1R8i3Gbvb53uZvfF9owbd2\/xzfZVrwTX3bEsF3Kfju33dyLr1S3xeO6Hup3qVz3dFsH839WIu+5+o9RXUgO0Gz39Kyb\/4eekOz\/+bdb8H3\/mztuXI9U39sPS84XK84GgzLoUkOG78eOexazZPz8+3j0jye+66dv2f+32Dc\/ReEf+T1bembudsPC98y+PbD2jeufcF3LPAdC6v9GD2WNtjSl6PH0ica\/fs1gfbAdQysapxjwh857kp9ct4Pu2F4v\/tYcD+LWHC\/mlhwP6pYcL+5WCjV90h99wHzdyxYn8eC\/Xcc6K\/Fw7t3jmsAAAAAAAAAAAAAAIAyf+C3DLA=",
          "encoding":"base64",
          "height":96,
          "id":11,
@@ -17,7 +17,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt3UFOwzAQheEIzoXIDokrcQRuw7pLzsI1AKu1FFlpk9iTGSfv\/6SRShEtyotjZxo1wwAAAAAAAAAAAADY+nqOL\/got\/vn0F7pdd6Kuvfcy3AtMvfzXmR++X\/uo7LS327ZL8jbX5l3qtq8txR5x5jmnbZ9edytKfLuV5n31spzQM08P30MHy15P1pzp33gMqx\/DB+Mby3M31pYn2vh\/FsH\/TU90b1zso5BlufH+NWRcvgefIrM4+W8H1n6\/Ro\/T9dCLK+8MzKPRd5a1uRtibxjeeedkHkc8tYSkTfnZTZyX+N1UnM\/l+WZN70XG7U9r9wL+Z0pei\/7suhZbt3uEei92PU1j0A974g1UyTy1spbfc3WQ97TdZqHNL6tMj\/a\/tND3hEsjulHyzoh7zo5Z6\/rNSyLvOtEjW+P\/WGPmuuzeM7hFo54TI\/w6JjikbnyOVmEpTmkNfOl1ydvX0vH9b37feR9LuSNKfLWQt46bv3UMfr\/wP5SzspZW\/VbvPokrdQ\/D02s+m9HyJy827T2XL33EfJuZ3FccL5ecXTYLKeWM7S+Htnyszv1tVo077xv7zkavyRWisibuTtOxLUW5B3HO2+yjkXeWshbi1fe9Fj6sOe1kPRY+uR1zTX6Q9YavMY4+0S8crvzfdjnx\/fda+F+Flq4X40W7kelhfvNaTEa3yPj+xiYv7WwPtfC+bcO+mt6onvnZA0AAAAAAAAAAHDfH6ErjtE=",
+         "data":"eJzt3V1Kw0AUxfGg6xLzJrgll+BufPbRtbgNdagDYWibr5t7kpz\/Dy60FVvIyWQmt6HpOgAAAAAAAAAAACDWx6O+kKPd7u\/d+irv89LUrdeeukuReZ7XJvPPv9feFlb53zn7BXnna\/MutTTvOUXeGsO8y7Zvj7tLirz3q817btU5YMk8P3yMHGvyvrfmLvvAZzf9MXIwvr0wf3thfe6F828f9Nf8qHvnZK1BlufH+PVRcvjqcorM9Wre94z9fYrvh0tBKyvvisy1yNvLlLwjkbdWdt4FmeuQtxdF3pyXxah9jedBXXveVmbe9F5iLO151V7Iz5Wi97KtiJ7l3O2uQO8lrq95BO55K9ZMSuTtlbf7mm0PeQ\/XaRnK+I7K\/Gj7zx7yVog4ph8t64K8l6k5Z12vEVnkvYxqfGfsD1vUtT5L5hwe4YjHdIV7x5SMzJ3PyRTG5pC1mY+9P3nnGjuub93vI+9zIW8MkbcX8tYR9VP7pI+DUMnZOeuofkvW2FzL\/fvQIqr\/doTMyXudtT3X7H2EvNeLOC4kX6\/YJ2yWU6sZRl+PHPndnftaTS077\/\/P7IPfEhMp8mbu1ql5Z\/ZbyFsn+9oastYiby\/k7SUrb3os+7DltZD0WPYp65pr7A9Ze8ga4+wTeu125\/ewz4\/fu\/fC\/Sy8cL8aL9yPygv3m\/MSNL57xvcxMH97YX3uhfNvH\/TX\/Kh752QNAAAAAAAAAABw2y+DVZTL",
          "encoding":"base64",
          "height":96,
          "id":12,
@@ -629,6 +629,30 @@
                  "width":60,
                  "x":432,
                  "y":368
+                }, 
+                {
+                 "gid":3454,
+                 "height":40,
+                 "id":85,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":736,
+                 "y":536
+                }, 
+                {
+                 "gid":3454,
+                 "height":40,
+                 "id":86,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":736,
+                 "y":296
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -659,7 +683,7 @@
          "y":0
         }],
  "nextlayerid":13,
- "nextobjectid":84,
+ "nextobjectid":87,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.2.4",
@@ -720,6 +744,14 @@
         {
          "firstgid":3261,
          "source":"..\/..\/tilesets\/frackinuniverse-custom\/BYOS_Objects.json"
+        }, 
+        {
+         "firstgid":3280,
+         "source":"..\/..\/..\/packed\/tilesets\/packed\/objects-by-category\/door.json"
+        }, 
+        {
+         "firstgid":3408,
+         "source":"..\/..\/tilesets\/frackinuniverse-custom\/fu_doors.json"
         }],
  "tilewidth":8,
  "type":"map",

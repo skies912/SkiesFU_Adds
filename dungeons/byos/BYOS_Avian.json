@@ -17,7 +17,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztm0FugzAQRamiHqGX6qJX6z6HyP3aCqm1FEsj14YZM7a\/4T9pFkQExvOIwcZZFkIIIYQQQggh5D+PZxAMgov1RidI0AkedILHlhPeZ8ZQcsLfTx9y1z2djMNae2QnZ+lTZ3YiHeTymtFRzFm25WH8fHluf4oI2z1yT\/Pb2kZnvdWH9vueuaa+S9fMjE5Cju+LPWStvxRxxLkmzuDEow7a82icHYlWuffm\/pfXjwjr9V7D3m\/PisU3upN74kJLbXs+Xn32SXOx7ofqpLePFmjyyO2D1IZIrQ8kjvpAavcZfGgp9VdITq7kI7A3bhrN1XxI0udKBCepj9H59KLkYnQNcuMPa7y9jMu\/hlx7JaOcxPPWzJekcyctnIRjhmN\/74R2n7Vw7W3VpjcecyYxb08n0YVnjtZ5k1H9lmffGeq4FZ71stL6+J60zi11kc6Zp9s9ajWDkxbIvgcNZCctckJ2ISk9Z43E+\/yzuIig3Vfi+zMPZnOBiocTuvBBvl\/WjLG2xl7kGKV3\/yPHC1dFu+Ytt+4Kda3GzHD9LjZ0gQNd4EAXOPB\/UViw5uSq\/ALQmRza",
+         "data":"eJztm0FugzAQRamiHqGX6q4n6z6HyP3aCqm1FEsj14YZM7a\/4T9pFkQExvOIwcZZFkIIIYQQQggh5D+PZxAMgov1RidI0AkedILHlhPeZ8ZQcsLfTx9y1z2djMNae2QnZ+lTZ3YiHeTymtFRzFm25WH8fHluf4oI2z1yT\/Pb2kZnvdWH9vueuaa+S9fMjE5Cju+LPWStvxRxxLkmzuDEow7a82icHYlWuffm\/pfXjwjr9V7D3m\/PisU3upN74kJLbXs+Xn32SXOx7ofqpLePFmjyyO2D1IZIrQ8kjvpAavcZfGgp9VdITq7kI7A3bhrN1XxI0udKBCepj9H59KLkYnQNcuMPa7y9jMu\/hlx7JaOcxPPWzJekcyctnIRjhmN\/74R2n7Vw7W3VpjcecyYxb08n0YVnjtZ5k1H9lmffGeq4FZ71stL6+J60zi11kc6Zp9s9ajWDkxbIvgcNZCctckJ2ISk9Z43E+\/yzuIig3Vfi+zMPZnOBiocTuvBBvl\/WjLG2xl7kGKV3\/yPHC1dFu+Ytt+4Kda3GzHD9LjZ0gQNd4EAXOPB\/UViw5uSq\/ALKFBzg",
          "encoding":"base64",
          "height":50,
          "id":8,
@@ -347,7 +347,7 @@
                  "y":248
                 }, 
                 {
-                 "gid":2513,
+                 "gid":2516,
                  "height":32,
                  "id":67,
                  "name":"",
@@ -359,7 +359,7 @@
                  "y":160
                 }, 
                 {
-                 "gid":2588,
+                 "gid":2591,
                  "height":69,
                  "id":69,
                  "name":"",
@@ -371,7 +371,7 @@
                  "y":248
                 }, 
                 {
-                 "gid":2586,
+                 "gid":2589,
                  "height":24,
                  "id":70,
                  "name":"",
@@ -383,7 +383,7 @@
                  "y":304
                 }, 
                 {
-                 "gid":2586,
+                 "gid":2589,
                  "height":24,
                  "id":71,
                  "name":"",
@@ -395,7 +395,7 @@
                  "y":304
                 }, 
                 {
-                 "gid":2586,
+                 "gid":2589,
                  "height":24,
                  "id":72,
                  "name":"",
@@ -415,7 +415,7 @@
                  "y":144
                 }, 
                 {
-                 "gid":2586,
+                 "gid":2589,
                  "height":24,
                  "id":73,
                  "name":"",
@@ -435,7 +435,7 @@
                  "y":152
                 }, 
                 {
-                 "gid":2592,
+                 "gid":2595,
                  "height":41,
                  "id":74,
                  "name":"",
@@ -522,15 +522,15 @@
          "source":"..\/..\/tilesets\/frackinuniverse-custom\/fu_objectsgeneric.json"
         }, 
         {
-         "firstgid":1077,
+         "firstgid":1080,
          "source":"..\/..\/..\/packed\/tilesets\/packed\/objects-by-category\/decorative.json"
         }, 
         {
-         "firstgid":2493,
+         "firstgid":2496,
          "source":"..\/..\/tilesets\/frackinuniverse-custom\/BYOS_ShipParts.json"
         }, 
         {
-         "firstgid":2576,
+         "firstgid":2579,
          "source":"..\/..\/tilesets\/frackinuniverse-custom\/BYOS_Objects.json"
         }],
  "tilewidth":8,
